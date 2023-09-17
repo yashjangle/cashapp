@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="cash.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">Cash Register Manager</h1>
+        <p class="heading-text">
+            Enter the bill amount and the cash given below.
+        </p>
+        <label for="bill-amount" id="bill-heading">Bill Amount</label>
+        <input type="text" id="bill-amount" />
+
+        <button class="next-btn">Next</button>
+
+        <p class="bill-error-msg"></p>
+
+        <div class="cash-amt-body container">
+            <label for="cash-given" id="cash-heading">Cash given</label>
+            <input type="text" id="cash-given" />
+
+            <button class="check-btn">Check</button>
+
+            <p class="message"></p>
+
+            <div class="display-change">
+                <p class="return-heading">Return Change:</p>
+                <table>
+                    <tr>
+                        <th>No. of Notes</th>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                        <td class="no-of-notes"></td>
+                    </tr>
+                    <tr>
+                        <th>Note</th>
+                        <td>2000</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>20</td>
+                        <td>10</td>
+                        <td>5</td>
+                        <td>1</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="cash.js"></script>
+</body>
+
+</html>
